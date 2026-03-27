@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Raleway:wght@400;500;600;700&display=swap" />
 
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -39,7 +38,6 @@
 
     <main>
         <div class="container">
-
             <section class="hero">
                 <div class="hero-content">
                     <p class="eyebrow">BiteBack</p>
@@ -48,14 +46,12 @@
                 </div>
             </section>
 
-            <div class ="loader-container">
+            <div class="loader-container">
                 <div class="loader"></div>
-                <div class="loader-text">
-                    Loading Delicious Deals...
-                </div>
+                <div class="loader-text">Loading Delicious Deals<span class="dots">.</span></div>
             </div>
 
-            <section>
+            <div class="deals" style="display: none;">
                 <h2 class="section-title">Deals for You</h2>
                 <div class="card-grid">
                     <div class="card">
@@ -94,12 +90,12 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <div class="feature" style="background-image: url('images/dietary-menu-healthy-vegan-salad-vegetables-broccoli-mushrooms-spinach-quinoa-bowl-flat-lay-top-view.jpg');">
+            <div class="feature" style="display: none; background-image: url('images/dietary-menu-healthy-vegan-salad-vegetables-broccoli-mushrooms-spinach-quinoa-bowl-flat-lay-top-view.jpg');">
                 <div class="feature-body">
                     <p class="eyebrow">Featured Restaurant</p>
-                    <h2>Kelseys Original Roadhouse</h2>
+                    <h2>Kelsey's Original Roadhouse</h2>
                     <a href="#" class="btn btn-outline">Prices from $9</a>
                 </div>
             </div>
@@ -158,5 +154,6 @@
     <footer>
         <p>&copy; 2026 BiteBack. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

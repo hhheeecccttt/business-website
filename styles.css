@@ -289,11 +289,14 @@ section {
     line-height: 1;
 }
 
+
 .loader-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-bottom: 60px;
+    margin-top: 60px;
 }
 
 /* HTML: <div class="loader"></div> */
@@ -338,7 +341,8 @@ section {
     align-items: flex-end;
     background-size: cover;
     background-position: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    margin-top: 40px;
     border-radius: 20px;
     overflow: hidden;
 }
