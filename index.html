@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Raleway:wght@400;500;600;700&display=swap" />
 
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -20,9 +21,17 @@
             <nav>
                 <ul>
                     <li><a href="/index.html" class="active">Home</a></li>
-                    <li><a href="/orders.html">Orders</a></li>
+                    <li><a href="/explore.html">Explore</a></li>
                     <li><a href="/account.html">Account</a></li>
                     <li><a href="/contact.html">Contact</a></li>
+                    <li>
+                        <div class="shopping-bag-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M6 7V6a6 6 0 0112 0v1h2a1 1 0 011 1l-1 12a2 2 0 01-2 2H6a2 2 0 01-2-2L3 8a1 1 0 011-1h2zm2 0h8V6a4 4 0 00-8 0v1zm0 3a1 1 0 012 0 2 2 0 004 0 1 1 0 112 0 4 4 0 01-8 0z"/>
+                            </svg>
+                            <span class="cart-count" id="cart-count"> 0 </span>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -39,6 +48,13 @@
                 </div>
             </section>
 
+            <div class ="loader-container">
+                <div class="loader"></div>
+                <div class="loader-text">
+                    Loading Delicious Deals...
+                </div>
+            </div>
+
             <section>
                 <h2 class="section-title">Deals for You</h2>
                 <div class="card-grid">
@@ -47,7 +63,7 @@
                         <div class="card-body">
                             <h6>Margarita Pizza</h6>
                             <p>Maria's Kitchen Italian Cuisine</p>
-                            <a href="#" class="btn btn-green">Buy Now — $8</a>
+                            <a class="btn btn-green">Buy Now — $8</a>
                         </div>
                     </div>
 
@@ -56,7 +72,7 @@
                         <div class="card-body">
                             <h6>Steak and Vegetables</h6>
                             <p>Westend Grill House</p>
-                            <a href="#" class="btn btn-green">Buy Now — $15</a>
+                            <a class="btn btn-green">Buy Now — $15</a>
                         </div>
                     </div>
 
@@ -65,7 +81,7 @@
                         <div class="card-body">
                             <h6>Salad with Seafood</h6>
                             <p>The Little House of Kebobs</p>
-                            <a href="#" class="btn btn-green">Buy Now — $9</a>
+                            <a class="btn btn-green">Buy Now — $9</a>
                         </div>
                     </div>
 
@@ -74,7 +90,7 @@
                         <div class="card-body">
                             <h6>Chocolate Crepes</h6>
                             <p>CrepeStar Dessert Cafe &amp; Bistro</p>
-                            <a href="#" class="btn btn-green">Buy Now — $8</a>
+                            <a class="btn btn-green">Buy Now — $8</a>
                         </div>
                     </div>
                 </div>
