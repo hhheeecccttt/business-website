@@ -55,6 +55,15 @@ a:hover {
     padding: 0 24px;
 }
 
+.top-bar {
+    display: flex;
+    align-items: center;
+}
+
+.shopping-bag-button {
+    margin-left: 4px;
+}
+
 .btn {
     display: inline-block;
     padding: 12px 32px;
@@ -71,6 +80,7 @@ a:hover {
 }
 
 .btn-green {
+    user-select: none;
     background-color: var(--green);
     color: var(--crust);
 }
@@ -232,7 +242,7 @@ section {
 }
 
 .section-title {
-    font-size: 1.75rem;
+    font-size: 50px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 40px;
