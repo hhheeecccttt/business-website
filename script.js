@@ -1,27 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const buyButtons = document.querySelectorAll('.btn-green');
+    // Cart
     const cartCount = document.getElementById('cart-count');
-
-    buyButtons.forEach(button => {
-        button.addEventListener('click', (e) => {
-            let current = parseInt(cartCount.textContent);
-            cartCount.textContent = current + 1;
+    document.querySelectorAll('.btn-green').forEach(button => {
+        button.addEventListener('click', () => {
+            cartCount.textContent = parseInt(cartCount.textContent) + 1;
             cartCount.classList.add('bump');
-            setTimeout(() => {
-                cartCount.classList.remove('bump');
-            }, 200);
+            setTimeout(() => cartCount.classList.remove('bump'), 200);
         });
     });
 
+    // Dots
+    const dotElement = document.querySelector('.dots');
     let dotCount = 1;
-    const dotElement = document.querySelector(".dots");
-    function pulseDots() {
+    setInterval(() => {
         dotCount = (dotCount % 3) + 1;
-        dotElement.textContent = " .".repeat(dotCount);
-    }
-    
-    setInterval(pulseDots, 500);
-    
+        dotElement.textContent = '.'.repeat(dotCount);
+    }, 500);
+
+    document.getElementById('query').addEventListener('input', e => {
+        console.log('searching:', e.target.value); // remove once confirmed working
+        filterCards(e.target.value.trim());
+    });
+
+    // Loader → reveal
     const loaderContainer = document.querySelector('.loader-container');
     const deals = document.querySelector('.deals');
     const feature = document.querySelector('.feature');
@@ -30,5 +31,5 @@ document.addEventListener('DOMContentLoaded', () => {
         loaderContainer.style.display = 'none';
         deals.style.display = 'block';
         feature.style.display = 'block';
-    }, Math.floor(Math.random() * (4500 - 2000 + 1)) + 2000);
+    }, Math.floor(Math.random() * 1500) + 500);
 });
