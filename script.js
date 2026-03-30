@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Cart
     const cartCount = document.getElementById('cart-count');
     document.querySelectorAll('.btn-green').forEach(button => {
         button.addEventListener('click', () => {
@@ -9,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Dots
     const dotElement = document.querySelector('.dots');
     let dotCount = 1;
     setInterval(() => {
@@ -22,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
         filterCards(e.target.value.trim());
     });
 
-    // Loader → reveal
     const loaderContainer = document.querySelector('.loader-container');
     const deals = document.querySelector('.deals');
     const feature = document.querySelector('.feature');

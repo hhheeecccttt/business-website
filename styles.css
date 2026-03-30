@@ -11,6 +11,10 @@
     --overlay: #6c7086;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
@@ -359,6 +363,9 @@ section {
     line-height: 1;
 }
 
+.no-results {
+    margin-left: 40px;
+}
 
 .loader-container {
     display: flex;
